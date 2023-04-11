@@ -1,0 +1,8 @@
+
+# DataSource Config
+spring:
+  datasource:
+    username: root
+    password: maoyaoqiang
+    url: jdbc:mysql://127.0.0.1:3306/Mao?userUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver

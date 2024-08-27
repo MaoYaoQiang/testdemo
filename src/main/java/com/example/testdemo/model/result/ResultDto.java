@@ -1,6 +1,10 @@
 package com.example.testdemo.model.result;
 
 public class ResultDto {
+    public ResultDto() {
+
+    }
+
     public Integer getCode() {
         return code;
     }
@@ -22,14 +26,24 @@ public class ResultDto {
         this.msg = msg;
     }
 
+    public Object getData() {
+        return data;
+    }
+
+    public void setData(Object data) {
+        this.data = data;
+    }
+
     private Integer code;
     private String msg;
+    private Object data;
 
     @Override
     public String toString() {
         return "ResultDto{" +
                 "code=" + code +
                 ", msg='" + msg + '\'' +
+                ", data=" + data +
                 '}';
     }
 }

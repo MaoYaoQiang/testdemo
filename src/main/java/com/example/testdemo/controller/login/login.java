@@ -1,4 +1,4 @@
-package com.example.testdemo.controller;
+package com.example.testdemo.controller.login;
 
 import com.example.testdemo.model.vo.LoginVo;
 import jdk.nashorn.internal.ir.CallNode;

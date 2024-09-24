@@ -1,4 +1,4 @@
-package com.example.testdemo.config;
+package com.example.testdemo.util;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;

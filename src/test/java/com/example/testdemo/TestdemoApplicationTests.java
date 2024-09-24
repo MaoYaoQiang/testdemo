@@ -431,6 +431,38 @@ class TestdemoApplicationTests {
         for (String s : split1) {
             System.out.println("s======"+s);
         }
+        String s="<Response>\n" +
+                "<ResultCode>1</ResultCode>\n" +
+                "<ResultMsg></ResultMsg>\n" +
+                "<Items>\n" +
+                "  <Item>\n" +
+                " <BLOOD_ADSCRIPTION>血浆</BLOOD_ADSCRIPTION>\n" +
+                "    <AMOUNT>1130</AMOUNT>\n" +
+                "</Item>\n" +
+                "<Item>\n" +
+                "<BLOOD_ADSCRIPTION>白细胞</BLOOD_ADSCRIPTION>\n" +
+                "   <AMOUNT>1130</AMOUNT>\n" +
+                "</Item>\n" +
+                "</Items></Response>";
+        JSONObject entries = XML.toJSONObject(s);
+        System.out.println(entries.getJSONObject("Response").get("ResultCode"));
+        System.out.println(entries.getJSONObject("Response").get("ResultMsg"));
+        System.out.println(entries.getJSONObject("Response").getJSONObject("Items"));
+        System.out.println(System.currentTimeMillis());
+        String flag="紧急输血";
+        if(Objects.nonNull(flag) && flag.contains("紧急")){
+            System.out.println("紧急");
+        }else{
+            System.out.println("不紧急");
+        }
+
+
+    }
+    @Test
+    public void  eivoiceTets(){
+        String s = UUID.randomUUID().toString().replaceAll("-", "");
+        System.out.println(s);
+
     }
 
 }

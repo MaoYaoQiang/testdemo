@@ -19,6 +19,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * 基地控制员建议
+ * testdemo2.0测试
+ * @author admin
+ * @date 2025/11/30
+ */
 @RestControllerAdvice("com.example")
 public class BaseControllerAdvice {
 

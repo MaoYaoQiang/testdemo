@@ -19,6 +19,7 @@ public class OneRules {
 
     public boolean isThree(@Fact("map") Map<String,String> map){
         System.out.println("======"+TestItemIdEnum.valueOf("ITEM_ID_"+map.get("id")));
+        System.out.println("======2025年11月30日下午15:47分测试"+TestItemIdEnum.valueOf("ITEM_ID_"+map.get("id")));
         System.out.println(TestItemIdEnum.valueOf("ITEM_ID_"+map.get("id")).getName().equals(map.get("name")));
         return TestItemIdEnum.valueOf("ITEM_ID_"+map.get("id")).getName().equals(map.get("name"));
     }
